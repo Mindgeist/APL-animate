@@ -8,22 +8,24 @@
             "version": "1.1"
         }
     ],
-            "styles": {
-            "stylePressable": {
-                "values": [                {
-                        "fontWeight": "800",
-                        "when": "${state.focused}"
-                    },
-                    {
-                        "fontWeight": "300",
-                        "when": "${state.pressed}"
-                    },
-                    {
-                        "fontWeight": "100",
-                        "when": "${state.disabled}"
-                    }]
-            }
-        },  
+    "styles": {
+        "stylePressable": {
+            "values": [
+                {
+                    "fontWeight": "400",
+                    "when": "${state.focused}"
+                },
+                {
+                    "fontWeight": "800",
+                    "when": "${state.pressed}"
+                },
+                {
+                    "fontWeight": "100",
+                    "when": "${state.disabled}"
+                }
+            ]
+        }
+    },
     "mainTemplate": {
         "items": [
             {
@@ -117,10 +119,11 @@
                                     "type": "TouchWrapper",
                                     "items": {
                                         "type": "Text",
-                                        "style": "stylePressable",
                                         "height": "10vh",
-                                        "text": "${data}"
+                                        "text": "${data}",
+                                        "fontWeight": "800"
                                     },
+                                    "style": "stylePressable",
                                     "onPress": [
                                         {
                                             "type": "${data}",
