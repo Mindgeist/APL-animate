@@ -1,127 +1,142 @@
 {
-    "document": {
-        "type": "APL",
-        "version": "1.3",
-        "import": [
-            {
-                "name": "Transitions",
-                "source": "https://ask-apls.s3.eu-west-3.amazonaws.com/apl-transitions.json",
-                "version": "1.1"
+    "type": "APL",
+    "version": "1.3",
+    "import": [
+        {
+            "name": "Transitions",
+            "source": "https://ask-apls.s3.eu-west-3.amazonaws.com/apl-transitions.json",
+            "version": "1.1"
+        }
+    ],
+            "styles": {
+            "stylePressable": {
+                "values": [                {
+                        "fontWeight": "800",
+                        "when": "${state.focused}"
+                    },
+                    {
+                        "fontWeight": "300",
+                        "when": "${state.pressed}"
+                    },
+                    {
+                        "fontWeight": "100",
+                        "when": "${state.disabled}"
+                    }]
             }
-        ],
-        "mainTemplate": {
-            "items": [
-                {
-                    "type": "Container",
-                    "items": [
-                        {
-                            "type": "Container",
-                            "width": "50vw",
-                            "height": "100vh",
-                            "paddingTop": "16dp",
-                            "paddingLeft": "16dp",
-                            "paddingRight": "16dp",
-                            "paddingBottom": "16dp",
-                            "item": [
-                                {
-                                    "type": "Image",
-                                    "id": "foo",
-                                    "width": "30vw",
-                                    "height": "6vw",
-                                    "source": "https://ask-pics-mindgeist.s3-eu-west-1.amazonaws.com/mglogo.png",
-                                    "align": "center",
-                                    "scale": "scale-down"
+        },  
+    "mainTemplate": {
+        "items": [
+            {
+                "type": "Container",
+                "items": [
+                    {
+                        "type": "Container",
+                        "width": "50vw",
+                        "height": "100vh",
+                        "paddingTop": "16dp",
+                        "paddingLeft": "16dp",
+                        "paddingRight": "16dp",
+                        "paddingBottom": "16dp",
+                        "item": [
+                            {
+                                "type": "Image",
+                                "id": "mglogo",
+                                "width": "30vw",
+                                "height": "6vw",
+                                "source": "https://ask-pics-mindgeist.s3-eu-west-1.amazonaws.com/mglogo.png",
+                                "align": "center",
+                                "scale": "scale-down"
+                            }
+                        ],
+                        "alignItems": "center",
+                        "justifyContent": "center"
+                    },
+                    {
+                        "type": "ScrollView",
+                        "height": "90vh",
+                        "alignSelf": "center",
+                        "items": [
+                            {
+                                "type": "Container",
+                                "width": "45vw",
+                                "data": [
+                                    "bounce",
+                                    "bounceIn",
+                                    "bounceInDown",
+                                    "bounceInLeft",
+                                    "bounceInRight",
+                                    "bounceInUp",
+                                    "bounceOut",
+                                    "bounceOutDown",
+                                    "bounceOutLeft",
+                                    "bounceOutRight",
+                                    "bounceOutUp",
+                                    "fadeIn",
+                                    "fadeInDown",
+                                    "fadeInLeft",
+                                    "fadeInRight",
+                                    "fadeInUp",
+                                    "fadeOut",
+                                    "fadeOutDown",
+                                    "fadeOutLeft",
+                                    "fadeOutRight",
+                                    "fadeOutUp",
+                                    "flash",
+                                    "jackInTheBox",
+                                    "jello",
+                                    "lightSpeedIn",
+                                    "lightSpeedOut",
+                                    "pulse",
+                                    "rollIn",
+                                    "rollOut",
+                                    "rotateIn",
+                                    "rubberBand",
+                                    "shake",
+                                    "slideInDown",
+                                    "slideInLeft",
+                                    "slideInRight",
+                                    "slideInUp",
+                                    "slideOutDown",
+                                    "slideOutLeft",
+                                    "slideOutRight",
+                                    "slideOutUp",
+                                    "tada",
+                                    "wobble",
+                                    "zoomIn",
+                                    "zoomInDown",
+                                    "zoomInLeft",
+                                    "zoomInRight",
+                                    "zoomInUp",
+                                    "zoomOut",
+                                    "zoomOutDown",
+                                    "zoomOutLeft",
+                                    "zoomOutRight",
+                                    "zoomOutUp"
+                                ],
+                                "item": {
+                                    "type": "TouchWrapper",
+                                    "items": {
+                                        "type": "Text",
+                                        "style": "stylePressable",
+                                        "height": "10vh",
+                                        "text": "${data}"
+                                    },
+                                    "onPress": [
+                                        {
+                                            "type": "${data}",
+                                            "duration": 1000,
+                                            "distance": "50vw",
+                                            "componentId": "mglogo"
+                                        }
+                                    ]
                                 }
-                            ],
-                            "alignItems": "center",
-                            "justifyContent": "center"
-                        },
-                        {
-                            "type": "ScrollView",
-                            "height": "90vh",
-                            "alignSelf": "center",
-                            "items": [
-                                {
-                                    "type": "Container",
-                                    "width": "45vw",
-                                    "data": [
-                                        "bounce",
-                                        "bounceIn",
-                                        "bounceInDown",
-                                        "bounceInLeft",
-                                        "bounceInRight",
-                                        "bounceInUp",
-                                        "bounceOut",
-                                        "bounceOutDown",
-                                        "bounceOutLeft",
-                                        "bounceOutRight",
-                                        "bounceOutUp",
-                                        "fadeIn",
-                                        "fadeInDown",
-                                        "fadeInLeft",
-                                        "fadeInRight",
-                                        "fadeInUp",
-                                        "fadeOut",
-                                        "fadeOutDown",
-                                        "fadeOutLeft",
-                                        "fadeOutRight",
-                                        "fadeOutUp",
-                                        "flash",
-                                        "jackInTheBox",
-                                        "jello",
-                                        "lightSpeedIn",
-                                        "lightSpeedOut",
-                                        "pulse",
-                                        "rollIn",
-                                        "rollOut",
-                                        "rotateIn",
-                                        "rubberBand",
-                                        "shake",
-                                        "slideInDown",
-                                        "slideInLeft",
-                                        "slideInRight",
-                                        "slideInUp",
-                                        "slideOutDown",
-                                        "slideOutLeft",
-                                        "slideOutRight",
-                                        "slideOutUp",
-                                        "tada",
-                                        "wobble",
-                                        "zoomIn",
-                                        "zoomInDown",
-                                        "zoomInLeft",
-                                        "zoomInRight",
-                                        "zoomInUp",
-                                        "zoomOut",
-                                        "zoomOutDown",
-                                        "zoomOutLeft",
-                                        "zoomOutRight",
-                                        "zoomOutUp"
-                                    ],
-                                    "item": {
-                                        "type": "TouchWrapper",
-                                        "items": {
-                                            "type": "Text",
-                                            "height": "10vh",
-                                            "text": "${data}"
-                                        },
-                                        "onPress": [
-                                            {
-                                                "type": "${data}",
-                                                "duration": 1000,
-                                                "componentId": "foo"
-                                            }
-                                        ]
-                                    }
-                                }
-                            ]
-                        }
-                    ],
-                    "direction": "row"
-                }
-            ]
-        },
-        "layouts": {}
+                            }
+                        ]
+                    }
+                ],
+                "direction": "row"
+            }
+        ]
     },
-    "datasources": {}
+    "layouts": {}
 }

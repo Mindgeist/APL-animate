@@ -5,10 +5,6 @@
         "bounce": {
             "parameters": [
                 {
-                    "name": "componentId",
-                    "default": "self"
-                },
-                {
                     "name": "duration",
                     "default": 100
                 },
