@@ -19,10 +19,10 @@ Alexa APL Animation Library
   * [Intent Request History Operations](#intent-request-history-operations)
   * [Miscellaneous Functions](#miscellaneous-functions)
   * [Custom API calls](#custom-api-calls)
-* [Examples](#examples)
+* [Ejemplos](#Ejemplos)
 
 
-##Ejemplos
+## Ejemplos
 ### Llamadas de atención
 #### Bounce
 ![Image  of  bounce](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/Bounce.gif?raw=true)
