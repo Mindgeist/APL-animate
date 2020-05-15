@@ -14,6 +14,7 @@ Implementa con las transformaciones disponibles con AnimateItem algunas de las a
     * [Importando el paquete](#utilizando-import)
     * [Alojando su propio paquete APL](#alojando-su-propio-paquete-apl)
     * [Asignando el comando a un componente](#asignando-el-comando-a-un-componente)
+    * [Parámetros](#parámetros)
 * [Ejemplo Simple](#ejemplo-simple)
     * [Animación simple de un objeto en onMount](#animando-una-imagen-en-un-evento-onmount)
 * [Ejemplo Avanzado](#ejemplo-avanzado)
@@ -173,6 +174,18 @@ Las animaciones pueden agregarse a un componente de un documento APL al que se h
     ....
 }
 ```
+
+#### Parámetros
+
+
+Propiedad | Tipo | Valor por defecto | Descripción
+------------ | ------------- | ------------ | -------------
+delay | Integer | 100 |El id del componente al que se aplicarán las transformaciones.
+delay | Integer | 100 | Duración en milisegundos
+distance | Integer | "50vw" | En algunos efectos, la distancia desde o hacia la que se realiza la animación. [Dimensiones](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-data-types-v1-1.html#dimension) 
+componentId | String | 0	| Identificador del elemento al que se aplicará el efecto
+
+
 ## Ejemplos
 
 ### Ejemplo simple
