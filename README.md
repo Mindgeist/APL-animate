@@ -13,10 +13,11 @@ Implementa con las transformaciones disponibles con AnimateItem algunas de las a
   * [Cómo utilizar este paquete](#c%C3%B3mo-utilizarlo)
     * [Importando el paquete](#utilizando-import)
     * [Alojando su propio paquete APL](#alojando-su-propio-paquete-apl)
+    * [Asignando el comando a un componente](#asignando-el-comando-a-un-componente)
+* [Ejemplo Simple](#ejemplo-simple)
     * [Animación simple de un objeto en onMount](#animando-una-imagen-en-un-evento-onmount)
-    * [Ejemplo avanzado onPress](#ejemplo-avanzado)
-
-* [Ejemplos de animaciones](https://github.com/Mindgeist/APL-animate/blob/master/SAMPLES.md)
+* [Ejemplo Avanzado](#ejemplo-avanzado)
+* [Ejemplos de las animaciones](https://github.com/Mindgeist/APL-animate/blob/master/SAMPLES.md)
 
 
 ## ¿Qué es Alexa APL?
@@ -154,6 +155,27 @@ Copie el documento [apl-animate.json](https://github.com/Mindgeist/APL-animate/b
 Puede utilizar un bucket S3 al que debe configurar para acceso público con el encabezado apropiado `Access-Control-Allow-Origin` de **uso compartido de origen cruzado** [CORS](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-support-for-your-skill.html#support-cors)
 
 Puede alojarlo en un repositorio público de GitHub ya que este soporta CORS en todos los dominios.
+
+#### Asignando el comando a un componente
+
+Las animaciones pueden agregarse a un componente de un documento APL al que se haya importado el paquete [apl-animate.json](https://github.com/Mindgeist/APL-animate/blob/master/src/apl-animate.json) a partir de un evento.
+
+```json
+{
+    "type": "Text",
+    "text": "APL 1.1 Transitions",
+    "onMount: [
+        {
+            "type": "fadeIn",
+            "duration": 1000
+        }
+    ],
+    ....
+}
+```
+## Ejemplos
+
+### Ejemplo simple
 
 #### Animando una imagen en un evento onMount
 
