@@ -13,6 +13,25 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     * [Wobble](#wobble)
     * [Jack In Thebox](#jack-in-the-box)
 
+* [Entradas](#entradas)
+    * [Bounce](#bounce)
+    * [Flash](#flash)
+    * [Pulse](#pulse)
+    * [Rubberband](#rubberBand)
+    * [Shake](#shake)
+    * [Tada](#tada)
+    * [Wobble](#wobble)
+    * [Jack In Thebox](#jack-in-the-box)
+
+* [Salidas](#salidas)
+    * [Bounce](#bounce)
+    * [Flash](#flash)
+    * [Pulse](#pulse)
+    * [Rubberband](#rubberBand)
+    * [Shake](#shake)
+    * [Tada](#tada)
+    * [Wobble](#wobble)
+    * [Jack In Thebox](#jack-in-the-box)
 
 ## Llamadas de atención
 ###  Bounce
@@ -112,7 +131,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
 ```
 
 
-## Entradas Fundido
+## Entradas 
 ###  Fade In 
 ![Image  of  fadeIn](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/FadeIn.gif?raw=true)
 
@@ -174,69 +193,6 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
 ```
 
 
-## Salidas Fundido
-###  Fade Out 
-![Image  of  fadeOut](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/FadeOut.gif?raw=true)
-
-```json
-{
-    "type": "fadeOut",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-###  Fade Out Down
-![Image  of  fadeOutDown](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/FadeOutDown.gif?raw=true)
-
-```json
-{
-    "type": "fadeOutDown",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-###  Fade Out Left
-![Image  of  fadeOutLeft](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/FadeOutLeft.gif?raw=true)
-
-```json
-{
-    "type": "fadeOutLeft",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-###  Fade Out Right
-![Image  of  fadeOutRight](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/FadeOutRight.gif?raw=true)
-
-```json
-{
-    "type": "fadeOutRight",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-###  Fade Out Up
-![Image  of  fadeOutUp](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/FadeOutUp.gif?raw=true)
-
-```json
-{
-    "type": "fadeOutUp",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-
-## Entradas Rebotando
 ###  Bounce In 
 ![Image  of  bounceIn](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/BounceIn.gif?raw=true)
 
@@ -297,71 +253,6 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
 }    
 ```
 
-
-## Salidas Rebotando
-###  Bounce Out 
-![Image  of  bounceOut](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/BounceOut.gif?raw=true)
-
-```json
-{
-    "type": "bounceOut",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-###  Bounce Out Down
-![Image  of  bounceOutDown](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/BounceOutDown.gif?raw=true)
-
-```json
-{
-    "type": "bounceOutDown",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-###  Bounce Out Left
-![Image  of  bounceOutLeft](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/BounceOutLeft.gif?raw=true)
-
-```json
-{
-    "type": "bounceOutLeft",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-###  Bounce Out Right
-![Image  of  bounceOutRight](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/BounceOutRight.gif?raw=true)
-
-```json
-{
-    "type": "bounceOutRight",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-###  Bounce Out Up
-![Image  of  bounceOutUp](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/BounceOutUp.gif?raw=true)
-
-```json
-{
-    "type": "bounceOutUp",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-
-
-## Lightspeed 
 ###  Lightspeed In 
 ![Image  of  lightSpeedIn](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/LightspeedIn.gif?raw=true)
 
@@ -374,21 +265,6 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
 }    
 ```
 
-
-###  Lightspeed Out 
-![Image  of  lightSpeedOut](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/LightspeedOut.gif?raw=true)
-
-```json
-{
-    "type": "lightSpeedOut",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-
-## Roll
 ###  Roll In 
 ![Image  of  rollIn](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/RollIn.gif?raw=true)
 
@@ -400,21 +276,6 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "distance": "100"
 }    
 ```
-
-###  Roll Out 
-![Image  of  rollOut](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/RollOut.gif?raw=true)
-
-```json
-{
-    "type": "rollOut",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-
-## Rotate
 ###  Rotate In 
 ![Image  of  rotateIn](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/RotateIn.gif?raw=true)
 
@@ -427,20 +288,6 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
 }    
 ```
 
-###  Rotate Out 
-![Image  of  rotateOut](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/RotateOut.gif?raw=true)
-
-```json
-{
-    "type": "rotateOut",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-
-## Entrada Deslizando
 ###  Slide In Down
 ![Image  of  slideInDown](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/SlideInDown.gif?raw=true)
 
@@ -488,59 +335,6 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "distance": "100"
 }    
 ```
-
-
-## Salida Deslizando
-###  Slide Out Down
-![Image  of  slideOutDown](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/SlideOutDown.gif?raw=true)
-
-```json
-{
-    "type": "slideOutDown",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-###  Slide Out Left
-![Image  of  slideOutLeft](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/SlideOutLeft.gif?raw=true)
-
-```json
-{
-    "type": "slideOutLeft",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-###  Slide Out Right
-![Image  of  slideOutRight](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/SlideOutRight.gif?raw=true)
-
-```json
-{
-    "type": "slideOutRight",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-###  Slide Out Up
-![Image  of  slideOutUp](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/SlideOutUp.gif?raw=true)
-
-```json
-{
-    "type": "slideOutUp",
-    "delay": 1000,
-    "duration": 1000,
-    "distance": "100"
-}    
-```
-
-
-###  Entrada Zoom
 ###  Zoom In 
 ![Image  of  zoomIn](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/ZoomIn.gif?raw=true)
 
@@ -602,7 +396,215 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
 ```
 
 
-## Salida Zoom
+
+## Salidas
+###  Fade Out 
+![Image  of  fadeOut](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/FadeOut.gif?raw=true)
+
+```json
+{
+    "type": "fadeOut",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
+###  Fade Out Down
+![Image  of  fadeOutDown](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/FadeOutDown.gif?raw=true)
+
+```json
+{
+    "type": "fadeOutDown",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
+###  Fade Out Left
+![Image  of  fadeOutLeft](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/FadeOutLeft.gif?raw=true)
+
+```json
+{
+    "type": "fadeOutLeft",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
+###  Fade Out Right
+![Image  of  fadeOutRight](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/FadeOutRight.gif?raw=true)
+
+```json
+{
+    "type": "fadeOutRight",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
+###  Fade Out Up
+![Image  of  fadeOutUp](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/FadeOutUp.gif?raw=true)
+
+```json
+{
+    "type": "fadeOutUp",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
+###  Bounce Out 
+![Image  of  bounceOut](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/BounceOut.gif?raw=true)
+
+```json
+{
+    "type": "bounceOut",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
+###  Bounce Out Down
+![Image  of  bounceOutDown](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/BounceOutDown.gif?raw=true)
+
+```json
+{
+    "type": "bounceOutDown",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
+###  Bounce Out Left
+![Image  of  bounceOutLeft](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/BounceOutLeft.gif?raw=true)
+
+```json
+{
+    "type": "bounceOutLeft",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
+###  Bounce Out Right
+![Image  of  bounceOutRight](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/BounceOutRight.gif?raw=true)
+
+```json
+{
+    "type": "bounceOutRight",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
+###  Bounce Out Up
+![Image  of  bounceOutUp](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/BounceOutUp.gif?raw=true)
+
+```json
+{
+    "type": "bounceOutUp",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
+
+###  Lightspeed Out 
+![Image  of  lightSpeedOut](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/LightspeedOut.gif?raw=true)
+
+```json
+{
+    "type": "lightSpeedOut",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
+
+###  Roll Out 
+![Image  of  rollOut](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/RollOut.gif?raw=true)
+
+```json
+{
+    "type": "rollOut",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
+
+###  Rotate Out 
+![Image  of  rotateOut](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/RotateOut.gif?raw=true)
+
+```json
+{
+    "type": "rotateOut",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
+###  Slide Out Down
+![Image  of  slideOutDown](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/SlideOutDown.gif?raw=true)
+
+```json
+{
+    "type": "slideOutDown",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
+###  Slide Out Left
+![Image  of  slideOutLeft](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/SlideOutLeft.gif?raw=true)
+
+```json
+{
+    "type": "slideOutLeft",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
+###  Slide Out Right
+![Image  of  slideOutRight](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/SlideOutRight.gif?raw=true)
+
+```json
+{
+    "type": "slideOutRight",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
+###  Slide Out Up
+![Image  of  slideOutUp](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/SlideOutUp.gif?raw=true)
+
+```json
+{
+    "type": "slideOutUp",
+    "delay": 1000,
+    "duration": 1000,
+    "distance": "100"
+}    
+```
+
 ###  Zoom Out 
 ![Image  of  zoomOut](https://github.com/Mindgeist/APL-animate/blob/master/thumbnails/ZoomOut.gif?raw=true)
 
