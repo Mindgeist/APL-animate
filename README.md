@@ -159,7 +159,7 @@ Puede probar este ejemplo pegando el código en la sección APL en la herramient
 * En la barra de navegación a la izquierda haga click en **Display**.
  * La herramienta de diseño se abrirá en una página nueva.
 * Haga click en **Create Template**.
-* Elija **Start from scratch*. así creará un documento en blanco.
+* Elija **Start from scratch*. Así creará un documento en blanco.
 * En la barra de navegación a la izquierda haga click en **APL** para abrir el editor de JSON.
 * Borre todo el contenido y copie el código de este ejemplo.
 
@@ -238,4 +238,171 @@ Puede probar este ejemplo pegando el código en la sección APL en la herramient
 
 En este ejemplo en el momento en que se despliega el documento se ejecuta una serie de comandos secuenciales, el primero pone el nombre del efecto en el elemento de texto con identificador **"actual"** a continuación con un intervalo inicial de espera de 1000ms aplica el efecto de animación de la librería *slideInLeft* que se desplazará desde una distancia **"distance"** de 100 unidades de ancho (*vw*, aunque puede utilizarse cualquier las unidades que soporta APL como *px* para píxeles) al elemento de imagen con identificador **"mglogo"**
 
-Como alternativa puede utilizar el archivo https://github.com/Mindgeist/APL-animate/blob/master/apl_template_samples.json 
+Como alternativa puede utilizar el archivo [apl_template_samples.json](https://github.com/Mindgeist/APL-animate/blob/master/apl_template_samples.json )
+
+
+* Abra la [consola de desarrollador](https://developer.amazon.com/alexa/console/ask?).
+* En la barra de navegación a la izquierda haga click en **Display**.
+ * La herramienta de diseño se abrirá en una página nueva.
+* Haga click en **Create Template**.
+* Elija **Upload Code* y suba el documento [apl_template_samples.json](https://github.com/Mindgeist/APL-animate/blob/master/apl_template_samples.json )
+* Elija el dispositivo que tenga registrado debajo de la simulación de la herramienta.
+* En el dispositivo verá una lista de efectos que podrá disparar tocando en el nombre.
+
+
+ #### 
+
+
+ ```json
+
+{
+    "type": "APL",
+    "version": "1.3",
+    "import": [
+        {
+            "name": "Animate",
+            "source": "https://ask-apls.s3.eu-west-3.amazonaws.com/apl-animate.json",
+            "version": "1.1"
+        }
+    ],
+    "styles": {
+        "stylePressable": {
+            "values": [
+                {
+                    "fontWeight": "400",
+                    "when": "${state.focused}"
+                },
+                {
+                    "fontWeight": "800",
+                    "when": "${state.pressed}"
+                },
+                {
+                    "fontWeight": "100",
+                    "when": "${state.disabled}"
+                }
+            ]
+        }
+    },
+    "mainTemplate": {
+        "items": [
+            {
+                "type": "Container",
+                "items": [
+                    {
+                        "type": "Container",
+                        "width": "50vw",
+                        "height": "100vh",
+                        "paddingTop": "16dp",
+                        "paddingLeft": "16dp",
+                        "paddingRight": "16dp",
+                        "paddingBottom": "16dp",
+                        "item": [
+                            {
+                                "type": "Image",
+                                "id": "mglogo",
+                                "width": "30vw",
+                                "height": "6vw",
+                                "source": "https://ask-pics-mindgeist.s3-eu-west-1.amazonaws.com/mglogo.png",
+                                "align": "center",
+                                "scale": "scale-down"
+                            }
+                        ],
+                        "alignItems": "center",
+                        "justifyContent": "center"
+                    },
+                    {
+                        "type": "ScrollView",
+                        "height": "90vh",
+                        "alignSelf": "center",
+                        "items": [
+                            {
+                                "type": "Container",
+                                "width": "45vw",
+                                "data": [
+                                    "bounce",
+                                    "bounceIn",
+                                    "bounceInDown",
+                                    "bounceInLeft",
+                                    "bounceInRight",
+                                    "bounceInUp",
+                                    "bounceOut",
+                                    "bounceOutDown",
+                                    "bounceOutLeft",
+                                    "bounceOutRight",
+                                    "bounceOutUp",
+                                    "fadeIn",
+                                    "fadeInDown",
+                                    "fadeInLeft",
+                                    "fadeInRight",
+                                    "fadeInUp",
+                                    "fadeOut",
+                                    "fadeOutDown",
+                                    "fadeOutLeft",
+                                    "fadeOutRight",
+                                    "fadeOutUp",
+                                    "flash",
+                                    "jackInTheBox",
+                                    "jello",
+                                    "lightSpeedIn",
+                                    "lightSpeedOut",
+                                    "pulse",
+                                    "rollIn",
+                                    "rollOut",
+                                    "rotateIn",
+                                    "rubberBand",
+                                    "shake",
+                                    "slideInDown",
+                                    "slideInLeft",
+                                    "slideInRight",
+                                    "slideInUp",
+                                    "slideOutDown",
+                                    "slideOutLeft",
+                                    "slideOutRight",
+                                    "slideOutUp",
+                                    "tada",
+                                    "wobble",
+                                    "zoomIn",
+                                    "zoomInDown",
+                                    "zoomInLeft",
+                                    "zoomInRight",
+                                    "zoomInUp",
+                                    "zoomOut",
+                                    "zoomOutDown",
+                                    "zoomOutLeft",
+                                    "zoomOutRight",
+                                    "zoomOutUp"
+                                ],
+                                "item": {
+                                    "type": "TouchWrapper",
+                                    "items": {
+                                        "type": "Text",
+                                        "height": "10vh",
+                                        "text": "${data}",
+                                        "fontWeight": "800"
+                                    },
+                                    "style": "stylePressable",
+                                    "onPress": [
+                                        {
+                                            "type": "${data}",
+                                            "duration": 1000,
+                                            "distance": "50vw",
+                                            "componentId": "mglogo"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "direction": "row"
+            }
+        ]
+    },
+    "layouts": {}
+}
+
+ ```
+
+ Este ejemplo utiliza otro evento, **onPress**, para disparar las animaciones.
+
+ 
