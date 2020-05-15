@@ -154,7 +154,7 @@ Copie el documento [apl-animate.json](https://github.com/Mindgeist/APL-animate/b
 
 Puede utilizar un bucket S3 al que debe configurar para acceso público con el encabezado apropiado `Access-Control-Allow-Origin` de **uso compartido de origen cruzado** [CORS](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-support-for-your-skill.html#support-cors)
 
-Puede alojarlo en un repositorio público de GitHub ya que este soporta CORS en todos los dominios.
+También puede alojarlo en un repositorio público de GitHub ya que este soporta CORS en todos los dominios.
 
 #### Asignando el comando a un componente
 
