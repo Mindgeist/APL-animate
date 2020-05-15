@@ -4,7 +4,7 @@
 
 ## Tabla de contenidos
 
-* [Alexa APLS](#¿qué_es_alexa_apl?)
+* [Alexa APLS](#qu%C3%A9-es-alexa-apl)
 * [Documentaciónn](#documentacion)
   * [Constructor](#constructor)
   * [Constants](#constants)
