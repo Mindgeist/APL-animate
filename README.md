@@ -10,7 +10,7 @@
   * [Paquetes APL](#paquetes-apl)
   * [Comandos APL](#comandos-apl)
   * [Cómo utilizar este paquete](#c%C3%B3mo-utilizarlo)
-    *[Alojando su propio paquete APL]()
+   * [Alojando su propio paquete APL]()
 
 * [Ejemplos](#Ejemplos)
 
@@ -155,13 +155,13 @@ Puede alojarlo en un repositorio público de GitHub ya que este soporta CORS en 
 
 Puede probar este ejemplo pegando el código en la sección APL en la herramienta de diseño de la [consola de desarrollador](https://developer.amazon.com/alexa/console/ask?).
 
-*Abra la consola.
-*En la barra de navegación a la izquierda haga click en **Display**.
- *La herramienta de diseño se abrirá en una página nueva.
-*Haga click en **Create Template**.
-*Elija **Start from scratch*. así creará un documento en blanco.
-*En la barra de navegación a la izquierda haga click en **APL** para abrir el editor de JSON.
-*Borre todo el contenido y copie el código de este ejemplo.
+* Abra la consola.
+* En la barra de navegación a la izquierda haga click en **Display**.
+ * La herramienta de diseño se abrirá en una página nueva.
+* Haga click en **Create Template**.
+* Elija **Start from scratch*. así creará un documento en blanco.
+* En la barra de navegación a la izquierda haga click en **APL** para abrir el editor de JSON.
+* Borre todo el contenido y copie el código de este ejemplo.
 
 ```json
 {
