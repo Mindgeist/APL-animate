@@ -151,7 +151,17 @@ Puede utilizar un bucket S3 al que debe configurar para acceso público con el e
 
 Puede alojarlo en un repositorio público de GitHub ya que este soporta CORS en todos los dominios.
 
-#### Animación onMount
+#### Animando una imagen en un evento onMount
+
+Puede probar este ejemplo pegando el código en la sección APL en la herramienta de diseño de la [consola de desarrollador](https://developer.amazon.com/alexa/console/ask?).
+
+*Abra la consola.
+*En la barra de navegación a la izquierda haga click en **Display**.
+ *La herramienta de diseño se abrirá en una página nueva.
+*Haga click en **Create Template**.
+*Elija **Start from scratch*. así creará un documento en blanco.
+*En la barra de navegación a la izquierda haga click en **APL** para abrir el editor de JSON.
+*Borre todo el contenido y copie el código de este ejemplo.
 
 ```json
 {
@@ -168,6 +178,7 @@ Puede alojarlo en un repositorio público de GitHub ya que este soporta CORS en 
         "items": [
             {
                 "type": "Container",
+                "direction": "row"
                 "items": [
                     {
                         "type": "Container",
@@ -177,6 +188,8 @@ Puede alojarlo en un repositorio público de GitHub ya que este soporta CORS en 
                         "paddingLeft": "16dp",
                         "paddingRight": "16dp",
                         "paddingBottom": "16dp",
+                        "alignItems": "center",
+                        "justifyContent": "center"
                         "item": [
                             {
                                 "type": "Image",
@@ -185,7 +198,6 @@ Puede alojarlo en un repositorio público de GitHub ya que este soporta CORS en 
                                 "height": "26vw",
                                 "source": "https://github.com/Mindgeist/APL-animate/raw/master/img/mglogo.png",
                                 "align": "center",
-                                "scale": "scale-down",
                                 "onMount": [
                                     {
                                         "type": "Sequential",
@@ -193,13 +205,14 @@ Puede alojarlo en un repositorio público de GitHub ya que este soporta CORS en 
                                             {
                                                 "type": "SetValue",
                                                 "property": "text",
-                                                "value": "Bounce Out ",
+                                                "value": "Slide In Left",
                                                 "componentId": "current"
                                             },
                                             {
-                                                "type": "bounceOut",
+                                                "type": "slideInLeft",
                                                 "delay": "1000",
                                                 "duration": 1000,
+                                                "distance":"100vw",
                                                 "componentId": "mglogo"
                                             }
                                         ]
@@ -212,12 +225,9 @@ Puede alojarlo en un repositorio público de GitHub ya que este soporta CORS en 
                                 "text": "Text",
                                 "id": "current"
                             }
-                        ],
-                        "alignItems": "center",
-                        "justifyContent": "center"
+                        ]
                     }
-                ],
-                "direction": "row"
+                ]
             }
         ]
     },
