@@ -9,8 +9,8 @@
   * [Documento APL](#documento-apl)
   * [Paquetes APL](#paquetes-apl)
   * [Comandos APL](#comandos-apl)
-
-  * [Skill Operations](#skill-operations)
+  * [Cómo utilizarlo](#c%C3%B3mo-utilizarlo)
+    *[Alojando su propio paquete APL]()
 
 * [Ejemplos](#Ejemplos)
 
@@ -87,40 +87,25 @@ Propiedad | Tipo | Valor por defecto | Descripción
 
 ##### Ejemplo de AnimateItem
 
-```json
-        "fadeIn": {
-            "parameters": [
-                {
-                    "name": "duration",
-                    "default": 100
-                },
-                {
-                    "name": "delay",
-                    "default": 100
-                },
-                {
-                    "name": "componentId",
-                    "default": "self"
-                }
-            ],
-            "commands": [
-                {
-                    "type": "AnimateItem",
-                    "componentId": "${componentId}",
-                    "duration": "${duration}",
-                    "delay": "${delay || 0}",
-                    "value": [
-                        {
-                            "property": "opacity",
-                            "from": 0,
-                            "to": 1
-                        }
-                    ]
-                }
-            ]
-        },
-```
+Esta secuencia de comandos aplica al componente con el `id = "foo"` una variación de 500ms de duración en la opacidad entre transparente y totalmente opaco que empieza después de un intervalo de 500ms desde que se ejecuta el comando y lo repite 5 veces con una duración total de 3000ms. En cada iteracón el valor se invierte, de totalmente transparente a totalmente opaco y viceversa.    
 
+```json
+
+{
+    "type": "AnimateItem",
+    "componentId": "foo",
+    "duration": "500",
+    "delay": "500",
+    "repeatCount": 5,
+    "repeatMode": "reverse",
+    "value": [
+        {
+            "property": "opacity",
+            "from": 0,
+            "to": 1
+        }
+}
+```
 
 
 
