@@ -74,6 +74,19 @@ Propiedad | Tipo | Valor por defecto | Descripción
 
 Ejecuta una animación de una duración determinada en una o más propiedades de un componente.
 
+`AnimateItem` suma las siguientes propiedades a las propiedades de un comando normal.
+
+Propiedad | Tipo | Valor por defecto | Descripción
+------------ | ------------- | ------------ | -------------
+`componentId` | String | SELF |El id del componente al que se aplicarán las transformaciones.
+`duration` | Integer | REQUIRED | Duración en milisegundos
+`easing` | linear, ease-in, … |	linear | Especifica la curva de reproducción.
+`repeatCount` | Integer | 0	| Número de veces que se repite.
+`repeatMode` | restart, reverse | restart | Cómo se repiten.
+`value` | Array of animated properties | REQUIRED | Un `array` de propiedades animadas de un componente.
+
+##### Ejemplo de AnimateItem
+
 ```json
         "fadeIn": {
             "parameters": [
@@ -107,6 +120,10 @@ Ejecuta una animación de una duración determinada en una o más propiedades de
             ]
         },
 ```
+
+
+
+
 
 ## Ejemplos
 ### Llamadas de atención
