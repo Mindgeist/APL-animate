@@ -60,7 +60,7 @@ El [Sistema de Diseño Alexa para APL](https://developer.amazon.com/es-ES/docs/a
 Los comandos son mensajes que modifican la presentación del contenido visual o de audio en un dispositivo Alexa con pantalla.
 Pueden dispararse por diferentes tipos de eventos. Los [comandos de APL](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-commands.html) se utilizan para navegar contenido, cambiar escenas en el documento, sincronizar la voz con presentaciones visuales y pueden utilizarse de manera creativa para crear experiencias de usuario multimodales (con soporte visual además de sonoro).
 
-Todos los comandos son un objeto JSON que tiene los siguientes propiedades:
+Todos los comandos son un objeto JSON que tiene las siguientes propiedades:
 
 Propiedad | Tipo | Valor por defecto | Descripción
 ------------ | ------------- | ------------ | -------------
@@ -70,7 +70,43 @@ Propiedad | Tipo | Valor por defecto | Descripción
 `when`| Boolean | true | Expresión condicional. Si se evalúa  ` false`el comando es ignorado.
 
 
+#### AnimateItem
 
+Ejecuta una animación de una duración determinada en una o más propiedades de un componente.
+
+```json
+        "fadeIn": {
+            "parameters": [
+                {
+                    "name": "duration",
+                    "default": 100
+                },
+                {
+                    "name": "delay",
+                    "default": 100
+                },
+                {
+                    "name": "componentId",
+                    "default": "self"
+                }
+            ],
+            "commands": [
+                {
+                    "type": "AnimateItem",
+                    "componentId": "${componentId}",
+                    "duration": "${duration}",
+                    "delay": "${delay || 0}",
+                    "value": [
+                        {
+                            "property": "opacity",
+                            "from": 0,
+                            "to": 1
+                        }
+                    ]
+                }
+            ]
+        },
+```
 
 ## Ejemplos
 ### Llamadas de atención
