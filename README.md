@@ -182,7 +182,7 @@ Propiedad | Tipo | Valor por defecto | Descripción
 ------------ | ------------- | ------------ | -------------
 delay | Integer | 100 |Intervalo de tiempo hasta que se ejecuta el efecto.
 duration | Integer | 100 | Duración en milisegundos.
-distance | Integer | "50vw" | En algunos efectos, la distancia desde o hacia la que se realiza la animación. [Unidades de dimensiones absolutas](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-data-types-v1-1.html#dimension) 
+distance | String | "50vw" | En algunos efectos, la distancia desde o hacia la que se realiza la animación. [Unidades de dimensiones absolutas](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-data-types-v1-1.html#dimension) 
 componentId | String | Requerido | Identificador del elemento al que se aplicará el efecto.
 
 
@@ -210,16 +210,15 @@ En este ejemplo en el momento en que se despliega el documento se ejecuta una se
     "version": "1.3",
     "import": [
         {
-            "name": "Transitions",
-            "source": "https://raw.githubusercontent.com/Mindgeist/APL-animate/master/src/apl-animate.json?token=AAS3JMW4BILNEAP4XEX2GQC6XZ3UI",
-            "version": "1.1"
+            "name": "Animate",
+            "source": "https://raw.githubusercontent.com/Mindgeist/APL-animate/master/src/apl-animate.json?token=AAS3JMW4BILNEAP4XEX2GQC6XZ3UI"
         }
     ],
     "mainTemplate": {
         "items": [
             {
                 "type": "Container",
-                "direction": "row"
+                "direction": "row",
                 "items": [
                     {
                         "type": "Container",
@@ -230,7 +229,7 @@ En este ejemplo en el momento en que se despliega el documento se ejecuta una se
                         "paddingRight": "16dp",
                         "paddingBottom": "16dp",
                         "alignItems": "center",
-                        "justifyContent": "center"
+                        "justifyContent": "center",
                         "item": [
                             {
                                 "type": "Image",
