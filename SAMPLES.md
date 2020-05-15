@@ -1,14 +1,16 @@
 # Ejemplos
 
-* [Llamadas de atención]()
- * [Bounce](bounce)
- * [Flash](#flash)
- * [Pulse](#pulse)
- * [Rubberband](#rubberBand)
- * [Shake](#shake)
- * [Tada](#tada)
- * [Wobble](#wobble)
- * [Jack In Thebox](#jack-in-the-box)
+Esta es una lista de los efectos disponibles en la primera vesión de [apl-animate.json](https://github.com/Mindgeist/APL-animate/blob/master/src/apl-animate.json)
+
+* [Llamadas de atención](#llamadas-de-atención)
+    * [Bounce](#bounce)
+    * [Flash](#flash)
+    * [Pulse](#pulse)
+    * [Rubberband](#rubberBand)
+    * [Shake](#shake)
+    * [Tada](#tada)
+    * [Wobble](#wobble)
+    * [Jack In Thebox](#jack-in-the-box)
 
 
 ## Llamadas de atención

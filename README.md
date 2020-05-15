@@ -245,12 +245,12 @@ Como alternativa puede utilizar el archivo [apl_template_samples.json](https://g
 * En la barra de navegación a la izquierda haga click en **Display**.
  * La herramienta de diseño se abrirá en una página nueva.
 * Haga click en **Create Template**.
-* Elija **Upload Code* y suba el documento [apl_template_samples.json](https://github.com/Mindgeist/APL-animate/blob/master/apl_template_samples.json )
+* Elija **Upload Code** y suba el documento [apl_template_samples.json](https://github.com/Mindgeist/APL-animate/blob/master/apl_template_samples.json )
 * Elija el dispositivo que tenga registrado debajo de la simulación de la herramienta.
-* En el dispositivo verá una lista de efectos que podrá disparar tocando en el nombre.
 
+En el dispositivo verá una lista de efectos que podrá disparar tocando en el nombre.
 
- #### 
+ #### Ejemplo Avanzado
 
 
  ```json
@@ -405,4 +405,3 @@ Como alternativa puede utilizar el archivo [apl_template_samples.json](https://g
 
  Este ejemplo utiliza otro evento, **onPress**, para disparar las animaciones.
 
- 
