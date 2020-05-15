@@ -9,7 +9,7 @@
   * [Documento APL](#documento-apl)
   * [Paquetes APL](#paquetes-apl)
   * [Comandos APL](#comandos-apl)
-  * [Cómo utilizarlo](#c%C3%B3mo-utilizarlo)
+  * [Cómo utilizar este paquete](#c%C3%B3mo-utilizarlo)
     *[Alojando su propio paquete APL]()
 
 * [Ejemplos](#Ejemplos)
@@ -45,7 +45,6 @@ Un APL más completo puede incluir definiciones de recursos, definiciones de est
 Puedes encontrar más información en [propiedades de un documento APL.](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-document.html#document-properties)
 
 
-
 ### Paquetes APL
 
 Un [paquete de APL](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-package.html) es un contenedor para `layouts`, `resources`, `styles` que pueden importarse en su documento APL, están conformados como un docmento único JSON que sique la estructura de un documento APL convencional pero en el que se prescinde de `mainTemplate`, aunque su inclusión no invalida el paquete.
@@ -54,6 +53,24 @@ Estos paquetes sirven para facilitar el acceso a elementos comunes ente diferent
 El [Sistema de Diseño Alexa para APL](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-alexa-packages-overview.html) está compuesto por un conjunto de paquetes de estilo y plantillas prediseñadas para incoporar a sus skills.
 
 [APL Animate](https://github.com/Mindgeist/APL-animate/tree/master/src) es un paquete APL de comandos que incluye más de 50 animaciones que pueden aplicarse a los elementos de un documento APL.
+
+#### Importar un paquete APL en su documento
+
+La sección `import` de un documento APL es un array de paquetes a importar en formato JSON.
+
+Este ejemplo importa el paquete de [Estilos de del Sistema de Diseño de APL de Alexa](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-alexa-styles-package.html)
+
+```json
+{
+  "import": [
+    {
+      "name": "alexa-styles",
+      "version": "1.1.0"
+    }
+  ]
+}
+```
+
 
 ### Comandos APL
 
@@ -90,7 +107,6 @@ Propiedad | Tipo | Valor por defecto | Descripción
 Esta secuencia de comandos aplica al componente con el `id = "foo"` una variación de 500ms de duración en la opacidad entre transparente y totalmente opaco que empieza después de un intervalo de 500ms desde que se ejecuta el comando y lo repite 5 veces con una duración total de 3000ms. En cada iteracón el valor se invierte, de totalmente transparente a totalmente opaco y viceversa.    
 
 ```json
-
 {
     "type": "AnimateItem",
     "componentId": "foo",
@@ -104,11 +120,38 @@ Esta secuencia de comandos aplica al componente con el `id = "foo"` una variaci�
             "from": 0,
             "to": 1
         }
+    ]
 }
 ```
 
 
+### Cómo utilizar este paquete
 
+#### Utilizando Import
+
+Copie el documento [apl-animate.json](https://github.com/Mindgeist/APL-animate/blob/master/src/apl-animate.json) a un almacenamiento con acceso publico e importe el paquete en su APL de esta manera:
+
+```json
+{
+    "type": "APL",
+    "version": "1.1",
+    "import": [
+        {
+            "name": "apl-animate",
+            "version": "https://yourdomain.com/<path>/apl-animate.json"
+        }
+    ]
+    ....
+}
+````
+
+#### Alojando su propio paquete APL
+
+Puede utilizar un bucket S3 al que debe configurar para acceso público con el encabezado apropiado `Access-Control-Allow-Origin` de **uso compartido de origen cruzado** [CORS](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-support-for-your-skill.html#support-cors)
+
+Puede alojarlo en un repositorio público de GitHub ya que este soporta CORS en todos los dominios.
+
+#### 
 
 ## Ejemplos
 ### Llamadas de atención
