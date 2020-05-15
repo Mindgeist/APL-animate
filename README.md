@@ -1,6 +1,7 @@
 # APL-animate
 ## Alexa APL Animation Library
-Ésta es una librería con una colección de animaciones que pueden aplicarse a objetos de Alexa APL. Implementa con las transformaciones disponibles con AnimateItem algunas de las animaciones implementadas en [Animate CSS](https://animate.style/), la adaptación original es de https://github.com/arjun-g/apl-transitions 
+Esta es una librería con una colección de animaciones que pueden aplicarse a objetos de Alexa APL. 
+Implementa con las transformaciones disponibles con AnimateItem algunas de las animaciones implementadas en [Animate CSS](https://animate.style/), la adaptación original es de https://github.com/arjun-g/apl-transitions 
 
 ## Tabla de contenidos
 
@@ -141,7 +142,7 @@ Copie el documento [apl-animate.json](https://github.com/Mindgeist/APL-animate/b
     "import": [
         {
             "name": "apl-animate",
-            "version": "https://yourdomain.com/<path>/apl-animate.json"
+            "source": "https://yourdomain.com/<path>/apl-animate.json"
         }
     ]
     ....
