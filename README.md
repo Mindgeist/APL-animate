@@ -147,21 +147,87 @@ Copie el documento [apl-animate.json](https://github.com/Mindgeist/APL-animate/b
 
 #### Alojando su propio paquete APL
 
-<<<<<<< HEAD
-Puede utilizar un bucket S3 al que debe configurar para acceso público con el encabezado apropiado `Access-Control-Allow-Origin` de *uso compartido de origen cruzado* [CORS](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-support-for-your-skill.html#support-cors)
-
-Puede alojarlo en un repositorio público de GitHub ya que este soporta CORS en todos los dominios.
-
-#### Aplicando la animación
-
-
-=======
 Puede utilizar un bucket S3 al que debe configurar para acceso público con el encabezado apropiado `Access-Control-Allow-Origin` de **uso compartido de origen cruzado** [CORS](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-support-for-your-skill.html#support-cors)
 
 Puede alojarlo en un repositorio público de GitHub ya que este soporta CORS en todos los dominios.
 
-#### 
->>>>>>> 5a22f2e0ff604bc8447cba0cd1454598998ff332
+#### Animación onMount
+
+```json
+{
+    "type": "APL",
+    "version": "1.3",
+    "import": [
+        {
+            "name": "Transitions",
+            "source": "https://raw.githubusercontent.com/Mindgeist/APL-animate/master/src/apl-animate.json?token=AAS3JMW4BILNEAP4XEX2GQC6XZ3UI",
+            "version": "1.1"
+        }
+    ],
+    "mainTemplate": {
+        "items": [
+            {
+                "type": "Container",
+                "items": [
+                    {
+                        "type": "Container",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "paddingTop": "16dp",
+                        "paddingLeft": "16dp",
+                        "paddingRight": "16dp",
+                        "paddingBottom": "16dp",
+                        "item": [
+                            {
+                                "type": "Image",
+                                "id": "mglogo",
+                                "width": "70vw",
+                                "height": "26vw",
+                                "source": "https://github.com/Mindgeist/APL-animate/raw/master/img/mglogo.png",
+                                "align": "center",
+                                "scale": "scale-down",
+                                "onMount": [
+                                    {
+                                        "type": "Sequential",
+                                        "commands": [
+                                            {
+                                                "type": "SetValue",
+                                                "property": "text",
+                                                "value": "Bounce Out ",
+                                                "componentId": "current"
+                                            },
+                                            {
+                                                "type": "bounceOut",
+                                                "delay": "1000",
+                                                "duration": 1000,
+                                                "componentId": "mglogo"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Text",
+                                "height": "10vh",
+                                "text": "Text",
+                                "id": "current"
+                            }
+                        ],
+                        "alignItems": "center",
+                        "justifyContent": "center"
+                    }
+                ],
+                "direction": "row"
+            }
+        ]
+    },
+    "layouts": {}
+}
+
+```
+
+
+
 
 ## Ejemplos
 ### Llamadas de atención
