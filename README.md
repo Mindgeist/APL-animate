@@ -4,21 +4,13 @@
 
 ## Tabla de contenidos
 
-* [Alexa APLS](#¿qué_es_alexa_apl?)
-* [Documentación](#documentacion)
-  * [Documento APL](#documento_apl)
-  * [Constants](#constants)
-  * [Access Tokens](#access-tokens)
+* [Alexa APLS](#qu%C3%A9-es-alexa-apl)
+* [Documentación](#documentaci%C3%B3n) 
+  * [Documento APL](#documento-apl)
+  * [Comandos APL](#comandos-apl)
+  * [Paquetes APL](#paquetes-apl)
   * [Skill Operations](#skill-operations)
-  * [Interaction Model Operations](#interaction-model-operations)
-  * [Account Linking Operations](#account-linking-operations)
-  * [Vendor Operations](#vendor-operations)
-  * [Skill Enablement Operations](#skill-enablement-operations)
-  * [Skill Certification Operations](#skill-certification-operations)
-  * [Skill Testing Operations](#skill-testing-operations)
-  * [Intent Request History Operations](#intent-request-history-operations)
-  * [Miscellaneous Functions](#miscellaneous-functions)
-  * [Custom API calls](#custom-api-calls)
+
 * [Ejemplos](#Ejemplos)
 
 
@@ -29,6 +21,40 @@ Con el Alexa Presentation Language se pueden crear experiencias visuales que dar
 La información que se presenta aquí corresponde a la de la especificación [1.3 de APL](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-document.html)
 
 ### Documento APL
+
+Un *documento APL* es un objeto JSON con una estructura bien definida. Define una plantilla que se presentará en un dispositivo con pantalla. Este documento controla la estructura y diseño.
+
+#### Ejemplo básico de un documento APL
+Este ejemplo muestra un documento APL que presenta un solo componente `Text`
+```json
+{
+  "type": "APL",
+  "version": "1.3",
+  "mainTemplate": {
+    "item": {
+      "type": "Text",
+      "text": "¡Hola mundo!"
+    }
+  }
+}
+```
+Un APL más completo puede incluir definiciones de recursos, definiciones de estilo, gráficos de vectores, etc.
+Puedes encontrar más información en [propiedades de un documento APL.](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-document.html#document-properties)
+
+### Comandos APL
+
+Los comandos son mensajes que modifican la presentación del contenido visual o de audio en un dispositivo Alexa con pantalla.
+Pueden dispararse por diferentes tipos de eventos. Los [comandos de APL](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-commands.html) se utilizan para navegar contenido, cambiar escenas en el documento, sincronizar la voz con presentaciones visuales y pueden utilizarse de manera creativa para crear experiencias de usuario multimodales (con soporte visual además de sonoro).
+
+### Paquetes APL
+
+Un [paquete de APL](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-package.html) es un contenedor para `layouts`, `resources`, `styles` que pueden importarse en su documento APL, están conformados como un docmento único JSON que sique la estructura de un documento APL convencional pero en el que se prescinde de `mainTemplate`, aunque su inclusión no invalida el paquete.
+
+Estos paquetes sirven para facilitar el acceso a elementos comunes ente diferentes documentos APL o entre diferentes skills.
+El [Sistema de Diseño Alexa para APL](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-alexa-packages-overview.html) está compuesto por un conjunto de paquetes de estilo y plantillas prediseñadas para incoporar a sus skills.
+
+[APL Animate](https://github.com/Mindgeist/APL-animate/tree/master/src) es un paquete APL de comandos que incluye más de 50 animaciones que pueden aplicarse a los elementos de un documento APL.
+ 
 
 ## Ejemplos
 ### Llamadas de atención
