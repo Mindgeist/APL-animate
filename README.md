@@ -23,9 +23,9 @@ Implementa con las transformaciones disponibles con AnimateItem algunas de las a
 Con el Alexa Presentation Language se pueden crear experiencias visuales que darán soporte a una skill. Los usuarios pueden interactuar en los dispositivos que lo soportan, como el Echo Show, Fire TV y otros dispositivos con experiencia multimodal que soporten Alexa. 
 
 ## Documentación
-La información que se presenta aquí corresponde a la de la especificación [1.3 de APL](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-document.html)
+La información que se presenta aquí es compatible con la de la especificación [1.3 de APL](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-document.html)
 
-Este documento no tiene el objetivo explicar los detalles del funcionamiento del APL de Alexa más allá de lo necesario para su uso e integración en otros proyectos, puede obtenerse más información en la [guías de diseño de Alexa](https://developer.amazon.com/es-ES/docs/alexa/alexa-design/get-started.html) y en los [foros](https://forums.developer.amazon.com/topics/apl.html).
+Este documento no tiene como objetivo explicar los detalles del funcionamiento del APL de Alexa más allá de lo necesario para su uso e integración en otros proyectos, puede obtenerse más información en la [guías de diseño de Alexa](https://developer.amazon.com/es-ES/docs/alexa/alexa-design/get-started.html) y en los [foros](https://forums.developer.amazon.com/topics/apl.html).
 
 ### Documento APL
 
