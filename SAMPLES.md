@@ -72,8 +72,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
 {
     "type": "bounce",
     "delay": 1000,
-    "duration": 1000,
-    "distance": "50vw"
+    "duration": 1000
 }    
 ```
 
@@ -84,8 +83,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
 {
     "type": "flash",
     "delay": 1000,
-    "duration": 1000,
-    "distance": "50vw"
+    "duration": 1000
 }    
 ```
 
@@ -96,8 +94,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
 {
     "type": "pulse",
     "delay": 1000,
-    "duration": 1000,
-    "distance": "50vw"
+    "duration": 1000
 }    
 ```
 
@@ -108,8 +105,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
 {
     "type": "rubberBand",
     "delay": 1000,
-    "duration": 1000,
-    "distance": "50vw"
+    "duration": 1000
 }    
 ```
 
@@ -120,8 +116,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
 {
     "type": "shake",
     "delay": 1000,
-    "duration": 1000,
-    "distance": "50vw"
+    "duration": 1000
 }    
 ```
 
@@ -132,8 +127,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
 {
     "type": "tada",
     "delay": 1000,
-    "duration": 1000,
-    "distance": "50vw"
+    "duration": 1000
 }    
 ```
 
@@ -144,8 +138,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
 {
     "type": "wobble",
     "delay": 1000,
-    "duration": 1000,
-    "distance": "50vw"
+    "duration": 1000
 }    
 ```
 
@@ -156,8 +149,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
 {
     "type": "jackInTheBox",
     "delay": 1000,
-    "duration": 1000,
-    "distance": "50vw"
+    "duration": 1000
 }    
 ```
 
@@ -170,8 +162,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
 {
     "type": "fadeIn",
     "delay": 1000,
-    "duration": 1000,
-    "distance": "50vw"
+    "duration": 1000
 }    
 ```
 
