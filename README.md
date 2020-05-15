@@ -176,7 +176,7 @@ Las animaciones pueden agregarse a un componente de un documento APL al que se h
     ]
 }
 ```
-![Fade](https://github.com/Mindgeist/APL-animate/blob/master/imf/fade.gif?raw=true)
+![Fade](https://github.com/Mindgeist/APL-animate/blob/master/img/fade.gif?raw=true)
 
 
 #### Parámetros
