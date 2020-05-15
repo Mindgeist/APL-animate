@@ -180,10 +180,10 @@ Las animaciones pueden agregarse a un componente de un documento APL al que se h
 
 Propiedad | Tipo | Valor por defecto | Descripción
 ------------ | ------------- | ------------ | -------------
-delay | Integer | 100 |El id del componente al que se aplicarán las transformaciones.
-delay | Integer | 100 | Duración en milisegundos
-distance | Integer | "50vw" | En algunos efectos, la distancia desde o hacia la que se realiza la animación. [Dimensiones](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-data-types-v1-1.html#dimension) 
-componentId | String | 0	| Identificador del elemento al que se aplicará el efecto
+delay | Integer | 100 |Intervalo de tiempo hasta que se ejecuta el efecto.
+duration | Integer | 100 | Duración en milisegundos.
+distance | Integer | "50vw" | En algunos efectos, la distancia desde o hacia la que se realiza la animación. [Unidades de dimensiones absolutas](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-data-types-v1-1.html#dimension) 
+componentId | String | Requerido | Identificador del elemento al que se aplicará el efecto.
 
 
 ## Ejemplos
