@@ -85,10 +85,10 @@ Todos los comandos son un objeto JSON que tiene las siguientes propiedades:
 
 Propiedad | Tipo | Valor por defecto | Descripción
 ------------ | ------------- | ------------ | -------------
-`type` | String | OBLIGATORIO | Tipo de comamdo
-`description`| String | "" | Documenta el comando (opcional)
-`delay`| Integer | 0 | El intervalo en milisegundos antes de que se ejecute el comando. Debe ser un número positivo.
-`when`| Boolean | true | Expresión condicional. Si se evalúa  ` false`el comando es ignorado.
+type | String | OBLIGATORIO | Tipo de comamdo
+description| String | "" | Documenta el comando (opcional)
+delay| Integer | 0 | El intervalo en milisegundos antes de que se ejecute el comando. Debe ser un número positivo.
+when| Boolean | true | Expresión condicional. Si se evalúa `false`el comando es ignorado.
 
 
 #### AnimateItem
@@ -99,12 +99,12 @@ Ejecuta una animación de una duración determinada en una o más propiedades de
 
 Propiedad | Tipo | Valor por defecto | Descripción
 ------------ | ------------- | ------------ | -------------
-`componentId` | String | SELF |El id del componente al que se aplicarán las transformaciones.
-`duration` | Integer | REQUIRED | Duración en milisegundos
-`easing` | linear, ease-in, … |	linear | Especifica la curva de reproducción.
-`repeatCount` | Integer | 0	| Número de veces que se repite.
-`repeatMode` | restart, reverse | restart | Cómo se repiten.
-`value` | Array of animated properties | REQUIRED | Un `array` de propiedades animadas de un componente.
+componentId | String | SELF |El id del componente al que se aplicarán las transformaciones.
+duration | Integer | REQUIRED | Duración en milisegundos
+easing | linear, ease-in, … |	linear | Especifica la curva de reproducción.
+repeatCount | Integer | 0	| Número de veces que se repite.
+repeatMode | restart, reverse | restart | Cómo se repiten.
+value | Array of animated properties | REQUIRED | Un `array` de propiedades animadas de un componente.
 
 ##### Ejemplo de AnimateItem
 
