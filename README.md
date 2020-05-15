@@ -5,12 +5,12 @@ Implementa con las transformaciones disponibles con AnimateItem algunas de las a
 
 ## Tabla de contenidos
 
-* [Alexa APLS](#qu%C3%A9-es-alexa-apl)
+* [Alexa APL](#qu%C3%A9-es-alexa-apl)
 * [Documentación](#documentaci%C3%B3n) 
   * [Documento APL](#documento-apl)
   * [Paquetes APL](#paquetes-apl)
   * [Comandos APL](#comandos-apl)
-  * [Cómo utilizar este paquete](#c%C3%B3mo-utilizarlo)
+  * [Cómo utilizar este paquete](#c%C3%B3mo-utilizar-este-paquete)
     * [Importando el paquete](#utilizando-import)
     * [Alojando su propio paquete APL](#alojando-su-propio-paquete-apl)
     * [Asignando el comando a un componente](#asignando-el-comando-a-un-componente)
@@ -21,7 +21,7 @@ Implementa con las transformaciones disponibles con AnimateItem algunas de las a
 * [Ejemplos de las animaciones](https://github.com/Mindgeist/APL-animate/blob/master/SAMPLES.md)
 
 
-## ¿Qué es Alexa APL?
+## Alexa APL
 Con el Alexa Presentation Language se pueden crear experiencias visuales que darán soporte a una skill. Los usuarios pueden interactuar en los dispositivos que lo soportan, como el Echo Show, Fire TV y otros dispositivos con experiencia multimodal que soporten Alexa. 
 
 ## Documentación
@@ -144,7 +144,8 @@ Copie el documento [apl-animate.json](https://github.com/Mindgeist/APL-animate/b
     "import": [
         {
             "name": "apl-animate",
-            "source": "https://yourdomain.com/<path>/apl-animate.json"
+            "source": "https://yourdomain.com/<path>/apl-animate.json",
+            "version": "1.0"
         }
     ]
     ....
@@ -164,7 +165,7 @@ Las animaciones pueden agregarse a un componente de un documento APL al que se h
 ```json
 {
     "type": "Text",
-    "text": "APL 1.1 Transitions",
+    "text": "APL 1.0 Animate",
     "onMount": [
         {
             "type": "fadeIn",
@@ -211,7 +212,8 @@ En este ejemplo en el momento en que se despliega el documento se ejecuta una se
     "import": [
         {
             "name": "Animate",
-            "source": "https://raw.githubusercontent.com/Mindgeist/APL-animate/master/src/apl-animate.json?token=AAS3JMW4BILNEAP4XEX2GQC6XZ3UI"
+            "source": "https://raw.githubusercontent.com/Mindgeist/APL-animate/master/src/apl-animate.json?token=AAS3JMW4BILNEAP4XEX2GQC6XZ3UI",
+            "version": "1.0"
         }
     ],
     "mainTemplate": {
@@ -301,7 +303,7 @@ Este ejemplo utiliza otro evento, **onPress**, para disparar las animaciones.
         {
             "name": "Animate",
             "source": "https://ask-apls.s3.eu-west-3.amazonaws.com/apl-animate.json",
-            "version": "1.1"
+            "version": "1.0"
         }
     ],
     "styles": {

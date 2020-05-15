@@ -5,7 +5,7 @@
         {
             "name": "Animate",
             "source": "https://ask-apls.s3.eu-west-3.amazonaws.com/apl-animate.json",
-            "version": "1.1"
+            "version": "1.0"
         }
     ],
     "styles": {
