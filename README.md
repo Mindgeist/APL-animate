@@ -166,15 +166,18 @@ Las animaciones pueden agregarse a un componente de un documento APL al que se h
 {
     "type": "Text",
     "text": "APL 1.0 Animate",
+    "id":"foo",
     "onMount": [
         {
+            "componentId": "foo",
             "type": "fadeIn",
             "duration": 1000
         }
-    ],
-    ....
+    ]
 }
 ```
+![Fade](https://github.com/Mindgeist/APL-animate/blob/master/imf/fade.gif?raw=true)
+
 
 #### Parámetros
 
