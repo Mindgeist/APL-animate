@@ -3,7 +3,7 @@
 Esta es una librería con una colección de animaciones que pueden aplicarse a objetos de Alexa APL. 
 Implementa con las transformaciones disponibles con AnimateItem algunas de las animaciones implementadas en [Animate CSS](https://animate.style/), la adaptación original es de https://github.com/arjun-g/apl-transitions 
 
-Surgió como solución a la necesidad de agregar efectos visuales para nuestra nueva skill de trivia: **Esta es tu pregnta.**
+Surgió como solución a la necesidad de agregar efectos visuales para nuestra nueva skill de trivia: **Esta es tu pregunta.**
 
 ![Image  of  Esta es tu pregunta](https://github.com/Mindgeist/APL-animate/blob/master/img/eetp.gif?raw=true)
 
