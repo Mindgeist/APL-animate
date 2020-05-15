@@ -166,6 +166,8 @@ Puede probar este ejemplo pegando el código en la sección APL en la herramient
 * En la barra de navegación a la izquierda haga click en **APL** para abrir el editor de JSON.
 * Borre todo el contenido y copie el código de este ejemplo.
 
+En este ejemplo en el momento en que se despliega el documento se ejecuta una serie de comandos secuenciales, el primero pone el nombre del efecto en el elemento de texto con identificador **"actual"** a continuación con un intervalo inicial de espera de 1000ms aplica el efecto de animación de la librería *slideInLeft* que se desplazará desde una distancia **"distance"** de 100 unidades de ancho (*vw*, aunque puede utilizarse cualquier las unidades que soporta APL como *px* para píxeles) al elemento de imagen con identificador **"mglogo"**
+
 ```json
 {
     "type": "APL",
@@ -239,10 +241,11 @@ Puede probar este ejemplo pegando el código en la sección APL en la herramient
 
 ```
 
-En este ejemplo en el momento en que se despliega el documento se ejecuta una serie de comandos secuenciales, el primero pone el nombre del efecto en el elemento de texto con identificador **"actual"** a continuación con un intervalo inicial de espera de 1000ms aplica el efecto de animación de la librería *slideInLeft* que se desplazará desde una distancia **"distance"** de 100 unidades de ancho (*vw*, aunque puede utilizarse cualquier las unidades que soporta APL como *px* para píxeles) al elemento de imagen con identificador **"mglogo"**
+
+
+#### Ejemplo Avanzado
 
 Como alternativa puede utilizar el archivo [apl_template_samples.json](https://github.com/Mindgeist/APL-animate/blob/master/apl_template_samples.json )
-
 
 * Abra la [consola de desarrollador](https://developer.amazon.com/alexa/console/ask?).
 * En la barra de navegación a la izquierda haga click en **Display**.
@@ -252,9 +255,7 @@ Como alternativa puede utilizar el archivo [apl_template_samples.json](https://g
 * Elija el dispositivo que tenga registrado debajo de la simulación de la herramienta.
 
 En el dispositivo verá una lista de efectos que podrá disparar tocando en el nombre.
-
-#### Ejemplo Avanzado
-
+Este ejemplo utiliza otro evento, **onPress**, para disparar las animaciones.
 
  ```json
 
@@ -406,5 +407,4 @@ En el dispositivo verá una lista de efectos que podrá disparar tocando en el n
 
  ```
 
- Este ejemplo utiliza otro evento, **onPress**, para disparar las animaciones.
 
