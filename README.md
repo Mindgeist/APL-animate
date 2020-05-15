@@ -164,7 +164,7 @@ Las animaciones pueden agregarse a un componente de un documento APL al que se h
 {
     "type": "Text",
     "text": "APL 1.1 Transitions",
-    "onMount: [
+    "onMount": [
         {
             "type": "fadeIn",
             "duration": 1000
