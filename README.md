@@ -1,11 +1,11 @@
 # APL-animate
-Alexa APL Animation Library
-
+## Alexa APL Animation Library
+Ésta es una librería con una colección de animaciones que pueden aplicarse a objetos de Alexa APL. Implementan con las transformaciones disponibles con AnimateItem algunas de las implementadas en [Animate CSS](https://animate.style/), la adaptación original es de https://github.com/arjun-g/apl-transitions 
 
 ## Tabla de contenidos
 
-* [Alexa APLS](#obtaining-essential-credentials)
-* [Documentation](#documentation)
+* [Alexa APLS](#¿qué_es_alexa_apl?)
+* [Documentaciónn](#documentacion)
   * [Constructor](#constructor)
   * [Constants](#constants)
   * [Access Tokens](#access-tokens)
@@ -20,6 +20,10 @@ Alexa APL Animation Library
   * [Miscellaneous Functions](#miscellaneous-functions)
   * [Custom API calls](#custom-api-calls)
 * [Ejemplos](#Ejemplos)
+
+
+## ¿Qué es Alexa APL?
+Con el Alexa Presentation Language se pueden crear experiencias visuales que darán soporte a una skill. Los usuarios pueden interactuar en los dispositivos que lo soportan, como el Echo Show, Fire TV y otros dispositivos con experiencia multimodal que soporten Alexa. 
 
 
 ## Ejemplos
