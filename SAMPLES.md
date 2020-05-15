@@ -1,6 +1,7 @@
 # Ejemplos
 
-Esta es una lista de los efectos disponibles en la primera vesión de [apl-animate.json](https://github.com/Mindgeist/APL-animate/blob/master/src/apl-animate.json)
+Esta es una lista de los efectos disponibles en la primera versión de [apl-animate.json](https://github.com/Mindgeist/APL-animate/blob/master/src/apl-animate.json)
+Para obtener más información acerca de como utilizarlo lea el [README.md](https://github.com/Mindgeist/APL-animate/blob/master/README.md)
 
 * [Llamadas de atención](#llamadas-de-atención)
     * [Bounce](#bounce)

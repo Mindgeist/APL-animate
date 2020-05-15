@@ -10,9 +10,12 @@
   * [Paquetes APL](#paquetes-apl)
   * [Comandos APL](#comandos-apl)
   * [Cómo utilizar este paquete](#c%C3%B3mo-utilizarlo)
-   * [Alojando su propio paquete APL]()
+    * [Importando el paquete](#utilizando-import)
+    * [Alojando su propio paquete APL](#alojando-su-propio-paquete-apl)
+    * [Animación simple de un objeto en onMount](#animando-una-imagen-en-un-evento-onmount)
+    * [Ejemplo avanzado onPress](#ejemplo-avanzado)
 
-* [Ejemplos](#Ejemplos)
+* [Ejemplos de animaciones](https://github.com/Mindgeist/APL-animate/blob/master/SAMPLES.md)
 
 
 ## ¿Qué es Alexa APL?
@@ -250,7 +253,7 @@ Como alternativa puede utilizar el archivo [apl_template_samples.json](https://g
 
 En el dispositivo verá una lista de efectos que podrá disparar tocando en el nombre.
 
- #### Ejemplo Avanzado
+#### Ejemplo Avanzado
 
 
  ```json
