@@ -14,24 +14,55 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     * [Jack In Thebox](#jack-in-the-box)
 
 * [Entradas](#entradas)
-    * [Bounce](#bounce)
-    * [Flash](#flash)
-    * [Pulse](#pulse)
-    * [Rubberband](#rubberBand)
-    * [Shake](#shake)
-    * [Tada](#tada)
-    * [Wobble](#wobble)
-    * [Jack In Thebox](#jack-in-the-box)
+    * [Fade In](#fade-in)
+    * [Fade In Down](#fade-in-down)
+    * [Fade In Left](#fade-in-left)
+    * [Fade In Right](#fade-in-right)
+    * [Fade In Up](#fade-in-up)
+    * [Bounce In](#bounce-in)
+    * [Bounce In Down](#bounce-in)
+    * [Bounce In Left](#bounce-in)
+    * [Bounce In Right](#bounce-in)
+    * [Bounce In Up](#bounce-in)
+    * [Lightspeed In](#lightspeed-in)
+    * [Roll In](#roll-in)
+    * [Rotate In](#rotate-in)
+    * [Slide In](#slide-in)
+    * [Slide In Down](#slide-in-down)
+    * [Slide In Left](#slide-in-left)
+    * [Slide In Right](#slide-in-right)
+    * [Slide In Up](#slide-in-up)
+    * [Zoom In](#zoom-in)
+    * [Zoom In Down](#zoom-in-down)
+    * [Zoom In Left](#zoom-in-left)
+    * [Zoom In Right](#zoom-in-right)
+    * [Zoom In Up](#zoom-in-up)
+
 
 * [Salidas](#salidas)
-    * [Bounce](#bounce)
-    * [Flash](#flash)
-    * [Pulse](#pulse)
-    * [Rubberband](#rubberBand)
-    * [Shake](#shake)
-    * [Tada](#tada)
-    * [Wobble](#wobble)
-    * [Jack In Thebox](#jack-in-the-box)
+    * [Fade Out](#fade-out)
+    * [Fade Out Down](#fade-out-down)
+    * [Fade Out Left](#fade-out-left)
+    * [Fade Out Right](#fade-out-right)
+    * [Fade Out Up](#fade-out-up)
+    * [Bounce Out](#bounce-out)
+    * [Bounce Out Down](#bounce-out)
+    * [Bounce Out Left](#bounce-out)
+    * [Bounce Out Right](#bounce-out)
+    * [Bounce Out Up](#bounce-out)
+    * [Lightspeed Out](#lightspeed-out)
+    * [Roll Out](#roll-out)
+    * [Rotate Out](#rotate-out)
+    * [Slide Out](#slide-out)
+    * [Slide Out Down](#slide-out-down)
+    * [Slide Out Left](#slide-out-left)
+    * [Slide Out Right](#slide-out-right)
+    * [Slide Out Up](#slide-out-up)
+    * [Zoom Out](#zoom-out)
+    * [Zoom Out Down](#zoom-out-down)
+    * [Zoom Out Left](#zoom-out-left)
+    * [Zoom Out Right](#zoom-out-right)
+    * [Zoom Out Up](#zoom-out-up)
 
 ## Llamadas de atención
 ###  Bounce
@@ -42,7 +73,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "bounce",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -54,7 +85,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "flash",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -66,7 +97,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "pulse",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -78,7 +109,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "rubberBand",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -90,7 +121,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "shake",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -102,7 +133,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "tada",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -114,7 +145,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "wobble",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -126,7 +157,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "jackInTheBox",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -140,7 +171,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "fadeIn",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -152,7 +183,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "fadeInDown",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -164,7 +195,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "fadeInLeft",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -176,7 +207,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "fadeInRight",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -188,7 +219,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "fadeInUp",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -201,7 +232,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "bounceIn",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -213,7 +244,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "bounceInDown",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -225,7 +256,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "bounceInLeft",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -237,7 +268,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "bounceInRight",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -249,7 +280,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "bounceInUp",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -261,7 +292,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "lightSpeedIn",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -273,7 +304,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "rollIn",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 ###  Rotate In 
@@ -284,7 +315,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "rotateIn",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -296,7 +327,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "slideInDown",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -308,7 +339,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "slideInLeft",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -320,7 +351,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "slideInRight",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -332,7 +363,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "slideInUp",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 ###  Zoom In 
@@ -343,7 +374,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "zoomIn",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -355,7 +386,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "zoomInDown",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -367,7 +398,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "zoomInLeft",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -379,7 +410,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "zoomInRight",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -391,7 +422,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "zoomInUp",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -406,7 +437,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "fadeOut",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -418,7 +449,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "fadeOutDown",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -430,7 +461,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "fadeOutLeft",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -442,7 +473,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "fadeOutRight",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -454,7 +485,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "fadeOutUp",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -466,7 +497,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "bounceOut",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -478,7 +509,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "bounceOutDown",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -490,7 +521,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "bounceOutLeft",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -502,7 +533,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "bounceOutRight",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -514,7 +545,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "bounceOutUp",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -527,7 +558,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "lightSpeedOut",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -540,7 +571,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "rollOut",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -553,7 +584,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "rotateOut",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -565,7 +596,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "slideOutDown",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -577,7 +608,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "slideOutLeft",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -589,7 +620,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "slideOutRight",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -601,7 +632,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "slideOutUp",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -613,7 +644,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "zoomOut",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -625,7 +656,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "zoomOutDown",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -637,7 +668,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "zoomOutLeft",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -649,7 +680,7 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "zoomOutRight",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
 
@@ -661,6 +692,6 @@ Para obtener más información acerca de como utilizarlo lea el [README.md](http
     "type": "zoomOutUp",
     "delay": 1000,
     "duration": 1000,
-    "distance": "100"
+    "distance": "50vw"
 }    
 ```
