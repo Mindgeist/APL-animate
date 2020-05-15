@@ -1,14 +1,15 @@
 # APL-animate
 ## Alexa APL Animation Library
-Ésta es una librería con una colección de animaciones que pueden aplicarse a objetos de Alexa APL. Implementan con las transformaciones disponibles con AnimateItem algunas de las implementadas en [Animate CSS](https://animate.style/), la adaptación original es de https://github.com/arjun-g/apl-transitions 
+Ésta es una librería con una colección de animaciones que pueden aplicarse a objetos de Alexa APL. Implementa con las transformaciones disponibles con AnimateItem algunas de las animaciones implementadas en [Animate CSS](https://animate.style/), la adaptación original es de https://github.com/arjun-g/apl-transitions 
 
 ## Tabla de contenidos
 
 * [Alexa APLS](#qu%C3%A9-es-alexa-apl)
 * [Documentación](#documentaci%C3%B3n) 
   * [Documento APL](#documento-apl)
-  * [Comandos APL](#comandos-apl)
   * [Paquetes APL](#paquetes-apl)
+  * [Comandos APL](#comandos-apl)
+
   * [Skill Operations](#skill-operations)
 
 * [Ejemplos](#Ejemplos)
@@ -19,6 +20,8 @@ Con el Alexa Presentation Language se pueden crear experiencias visuales que dar
 
 ## Documentación
 La información que se presenta aquí corresponde a la de la especificación [1.3 de APL](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-document.html)
+
+Este documento no tiene el objetivo explicar los detalles del funcionamiento del APL de Alexa más allá de lo necesario para su uso e integración en otros proyectos, puede obtenerse más información en la [guías de diseño de Alexa](https://developer.amazon.com/es-ES/docs/alexa/alexa-design/get-started.html) y en los [foros](https://forums.developer.amazon.com/topics/apl.html).
 
 ### Documento APL
 
@@ -41,10 +44,7 @@ Este ejemplo muestra un documento APL que presenta un solo componente `Text`
 Un APL más completo puede incluir definiciones de recursos, definiciones de estilo, gráficos de vectores, etc.
 Puedes encontrar más información en [propiedades de un documento APL.](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-document.html#document-properties)
 
-### Comandos APL
 
-Los comandos son mensajes que modifican la presentación del contenido visual o de audio en un dispositivo Alexa con pantalla.
-Pueden dispararse por diferentes tipos de eventos. Los [comandos de APL](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-commands.html) se utilizan para navegar contenido, cambiar escenas en el documento, sincronizar la voz con presentaciones visuales y pueden utilizarse de manera creativa para crear experiencias de usuario multimodales (con soporte visual además de sonoro).
 
 ### Paquetes APL
 
@@ -54,7 +54,23 @@ Estos paquetes sirven para facilitar el acceso a elementos comunes ente diferent
 El [Sistema de Diseño Alexa para APL](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-alexa-packages-overview.html) está compuesto por un conjunto de paquetes de estilo y plantillas prediseñadas para incoporar a sus skills.
 
 [APL Animate](https://github.com/Mindgeist/APL-animate/tree/master/src) es un paquete APL de comandos que incluye más de 50 animaciones que pueden aplicarse a los elementos de un documento APL.
- 
+
+### Comandos APL
+
+Los comandos son mensajes que modifican la presentación del contenido visual o de audio en un dispositivo Alexa con pantalla.
+Pueden dispararse por diferentes tipos de eventos. Los [comandos de APL](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-commands.html) se utilizan para navegar contenido, cambiar escenas en el documento, sincronizar la voz con presentaciones visuales y pueden utilizarse de manera creativa para crear experiencias de usuario multimodales (con soporte visual además de sonoro).
+
+Todos los comandos son un objeto JSON que tiene los siguientes propiedades:
+
+Propiedad | Tipo | Valor por defecto | Descripción
+------------ | -------------
+`type` | String | OBLIGATORIO | Tipo de comamdo
+`description`| String | "" | Documenta el comando (opcional)
+`delay`| Integer | 0 | El intervalo en milisegundos antes de que se ejecute el comando. Debe ser un número positivo.
+`when`| Boolean | true | Expresión condicional. Si se evalúa  ` false`el comando es ignorado.
+
+
+
 
 ## Ejemplos
 ### Llamadas de atención
