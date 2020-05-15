@@ -4,9 +4,9 @@
 
 ## Tabla de contenidos
 
-* [Alexa APLS](#qu%C3%A9-es-alexa-apl)
-* [Documentaciónn](#documentacion)
-  * [Constructor](#constructor)
+* [Alexa APLS](#¿qué_es_alexa_apl?)
+* [Documentación](#documentacion)
+  * [Documento APL](#documento_apl)
   * [Constants](#constants)
   * [Access Tokens](#access-tokens)
   * [Skill Operations](#skill-operations)
@@ -25,6 +25,10 @@
 ## ¿Qué es Alexa APL?
 Con el Alexa Presentation Language se pueden crear experiencias visuales que darán soporte a una skill. Los usuarios pueden interactuar en los dispositivos que lo soportan, como el Echo Show, Fire TV y otros dispositivos con experiencia multimodal que soporten Alexa. 
 
+## Documentación
+La información que se presenta aquí corresponde a la de la especificación [1.3 de APL](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-document.html)
+
+### Documento APL
 
 ## Ejemplos
 ### Llamadas de atención
