@@ -63,7 +63,7 @@ Pueden dispararse por diferentes tipos de eventos. Los [comandos de APL](https:/
 Todos los comandos son un objeto JSON que tiene los siguientes propiedades:
 
 Propiedad | Tipo | Valor por defecto | Descripción
------------- | -------------
+------------ | ------------- | ------------ | -------------
 `type` | String | OBLIGATORIO | Tipo de comamdo
 `description`| String | "" | Documenta el comando (opcional)
 `delay`| Integer | 0 | El intervalo en milisegundos antes de que se ejecute el comando. Debe ser un número positivo.
