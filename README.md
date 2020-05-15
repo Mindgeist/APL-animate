@@ -62,7 +62,7 @@ El [Sistema de Diseño Alexa para APL](https://developer.amazon.com/es-ES/docs/a
 
 La sección `import` de un documento APL es un array de paquetes a importar en formato JSON.
 
-Este ejemplo importa el paquete de [Estilos de del Sistema de Diseño de APL de Alexa](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-alexa-styles-package.html)
+Este ejemplo importa el paquete de [Estilos del Sistema de Diseño de APL de Alexa](https://developer.amazon.com/es-ES/docs/alexa/alexa-presentation-language/apl-alexa-styles-package.html)
 
 ```json
 {
