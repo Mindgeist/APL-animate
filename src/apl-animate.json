@@ -4386,6 +4386,454 @@
                     ]
                 }
             ]
+        },
+        "backOutUp": {
+            "parameters": [
+                {
+                    "name": "componentId",
+                    "default": "self"
+                },
+                {
+                    "name": "duration",
+                    "default": 100
+                },
+                {
+                    "name": "distance",
+                    "default": "100vw"
+                },
+                {
+                    "name": "delay",
+                    "default": 100
+                }
+            ],
+            "commands": [
+                {
+                    "type": "Sequential",
+                    "commands": [
+                        {
+                            "type": "AnimateItem",
+                            "componentId": "${componentId}",
+                            "delay": "${delay || 0}",
+                            "duration": "${duration* 0.4}",
+                            "easing": "ease-out",
+                            "value": [
+                                {
+                                    "property": "opacity",
+                                    "from": 1,
+                                    "to": 0.4
+                                },
+                                {
+                                    "property": "transform",
+                                    "from": [
+                                        {
+                                            "scale": 1
+                                        }
+                                    ],
+                                    "to": [
+                                        {
+                                            "scale": 0.7
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "AnimateItem",
+                            "componentId": "${componentId}",
+                            "duration": "${duration*0.6}",
+                            "value": [
+                                {
+                                    "property": "opacity",
+                                    "from": 0.4,
+                                    "to": 0
+                                },
+                                {
+                                    "property": "transform",
+                                    "from": [
+                                        {
+                                            "translateY": "0"
+                                        },
+                                        {
+                                            "scale": 0.7
+                                        }
+                                    ],
+                                    "to": [
+                                        {
+                                            "translateY": "${distance && ('-' + distance) || '-100%'}"
+                                        },
+                                        {
+                                            "scale": 0.7
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "backOutDown": {
+            "parameters": [
+                {
+                    "name": "componentId",
+                    "default": "self"
+                },
+                {
+                    "name": "duration",
+                    "default": 100
+                },
+                {
+                    "name": "distance",
+                    "default": "100vw"
+                },
+                {
+                    "name": "delay",
+                    "default": 100
+                }
+            ],
+            "commands": [
+                {
+                    "type": "Sequential",
+                    "commands": [
+                        {
+                            "type": "AnimateItem",
+                            "componentId": "${componentId}",
+                            "delay": "${delay || 0}",
+                            "duration": "${duration* 0.4}",
+                            "easing": "ease-out",
+                            "value": [
+                                {
+                                    "property": "opacity",
+                                    "from": 1,
+                                    "to": 0.4
+                                },
+                                {
+                                    "property": "transform",
+                                    "from": [
+                                        {
+                                            "scale": 1
+                                        }
+                                    ],
+                                    "to": [
+                                        {
+                                            "scale": 0.7
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "AnimateItem",
+                            "componentId": "${componentId}",
+                            "duration": "${duration*0.6}",
+                            "value": [
+                                {
+                                    "property": "opacity",
+                                    "from": 0.4,
+                                    "to": 0
+                                },
+                                {
+                                    "property": "transform",
+                                    "from": [
+                                        {
+                                            "translateY": "0"
+                                        },
+                                        {
+                                            "scale": 0.7
+                                        }
+                                    ],
+                                    "to": [
+                                        {
+                                            "translateY": "${distance && ( distance) || '-100%'}"
+                                        },
+                                        {
+                                            "scale": 0.7
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "backOutLeft": {
+            "parameters": [
+                {
+                    "name": "componentId",
+                    "default": "self"
+                },
+                {
+                    "name": "duration",
+                    "default": 100
+                },
+                {
+                    "name": "distance",
+                    "default": "100vw"
+                },
+                {
+                    "name": "delay",
+                    "default": 100
+                }
+            ],
+            "commands": [
+                {
+                    "type": "Sequential",
+                    "commands": [
+                        {
+                            "type": "AnimateItem",
+                            "componentId": "${componentId}",
+                            "delay": "${delay || 0}",
+                            "duration": "${duration* 0.4}",
+                            "easing": "ease-out",
+                            "value": [
+                                {
+                                    "property": "opacity",
+                                    "from": 1,
+                                    "to": 0.4
+                                },
+                                {
+                                    "property": "transform",
+                                    "from": [
+                                        {
+                                            "scale": 1
+                                        }
+                                    ],
+                                    "to": [
+                                        {
+                                            "scale": 0.7
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "AnimateItem",
+                            "componentId": "${componentId}",
+                            "duration": "${duration*0.6}",
+                            "value": [
+                                {
+                                    "property": "opacity",
+                                    "from": 0.4,
+                                    "to": 0
+                                },
+                                {
+                                    "property": "transform",
+                                    "from": [
+                                        {
+                                            "translateY": "0"
+                                        },
+                                        {
+                                            "scale": 0.7
+                                        }
+                                    ],
+                                    "to": [
+                                        {
+                                            "translateX": "${distance && ('-' + distance) || '-100%'}"
+                                        },
+                                        {
+                                            "scale": 0.7
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "backOutRight": {
+            "parameters": [
+                {
+                    "name": "componentId",
+                    "default": "self"
+                },
+                {
+                    "name": "duration",
+                    "default": 100
+                },
+                {
+                    "name": "distance",
+                    "default": "100vw"
+                },
+                {
+                    "name": "delay",
+                    "default": 100
+                }
+            ],
+            "commands": [
+                {
+                    "type": "Sequential",
+                    "commands": [
+                        {
+                            "type": "AnimateItem",
+                            "componentId": "${componentId}",
+                            "delay": "${delay || 0}",
+                            "duration": "${duration* 0.4}",
+                            "easing": "ease-out",
+                            "value": [
+                                {
+                                    "property": "opacity",
+                                    "from": 1,
+                                    "to": 0.4
+                                },
+                                {
+                                    "property": "transform",
+                                    "from": [
+                                        {
+                                            "scale": 1
+                                        }
+                                    ],
+                                    "to": [
+                                        {
+                                            "scale": 0.7
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "AnimateItem",
+                            "componentId": "${componentId}",
+                            "duration": "${duration*0.6}",
+                            "value": [
+                                {
+                                    "property": "opacity",
+                                    "from": 0.4,
+                                    "to": 0
+                                },
+                                {
+                                    "property": "transform",
+                                    "from": [
+                                        {
+                                            "translateY": "0"
+                                        },
+                                        {
+                                            "scale": 0.7
+                                        }
+                                    ],
+                                    "to": [
+                                        {
+                                            "translateX": "${distance && ( distance) || '-100%'}"
+                                        },
+                                        {
+                                            "scale": 0.7
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "rotateZoomOut": {
+            "parameters": [
+                {
+                    "name": "componentId",
+                    "default": "self"
+                },
+                {
+                    "name": "duration",
+                    "default": 100
+                },
+                {
+                    "name": "distance"
+                },
+                {
+                    "name": "delay",
+                    "default": 100
+                }
+            ],
+            "commands": [
+                {
+                    "type": "AnimateItem",
+                    "componentId": "${componentId}",
+                    "delay": "${delay || 0}",
+                    "duration": "${duration}",
+                    "easing": "ease-in",
+                    "value": [
+                        {
+                            "property": "opacity",
+                            "from": 1,
+                            "to": 0
+                        },
+                        {
+                            "property": "transform",
+                            "from": [
+                                {
+                                    "rotate": 0
+                                },
+                                {
+                                    "scale": 1
+                                }
+                            ],
+                            "to": [
+                                {
+                                    "rotate": -270
+                                },
+                                {
+                                    "scale": 5
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "rotateZoomIn": {
+            "parameters": [
+                {
+                    "name": "componentId",
+                    "default": "self"
+                },
+                {
+                    "name": "duration",
+                    "default": 100
+                },
+                {
+                    "name": "distance"
+                },
+                {
+                    "name": "delay",
+                    "default": 100
+                }
+            ],
+            "commands": [
+                {
+                    "type": "AnimateItem",
+                    "componentId": "${componentId}",
+                    "delay": "${delay || 0}",
+                    "duration": "${duration}",
+                    "easing": "ease-out",
+                    "value": [
+                        {
+                            "property": "opacity",
+                            "from": 0,
+                            "to": 1
+                        },
+                        {
+                            "property": "transform",
+                            "from": [
+                                {
+                                    "rotate": -270
+                                },
+                                {
+                                    "scale": 5
+                                }
+                            ],
+                            "to": [
+                                {
+                                    "rotate": 0
+                                },
+                                {
+                                    "scale": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     }
 }

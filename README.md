@@ -197,6 +197,8 @@ componentId | String | Requerido | Identificador del elemento al que se aplicar�
 
 ## Ejemplos
 
+Puedes ver todos los ejemplos [aquí](https://github.com/Mindgeist/APL-animate/blob/master/SAMPLES.md).
+
 ### Ejemplo simple
 
 #### Animando una imagen en un evento onMount
@@ -290,7 +292,9 @@ En este ejemplo en el momento en que se despliega el documento se ejecuta una se
 
 #### Ejemplo Avanzado
 
-Como alternativa puede utilizar el archivo [apl_template_samples.json](https://github.com/Mindgeist/APL-animate/blob/master/apl_template_samples.json )
+Como alternativa puede utilizar el archivo [apl_template_samples.json](https://github.com/Mindgeist/APL-animate/blob/master/apl_template_samples.json ) 
+
+Puedes ver un vídeo de este ejemplo [aquí](https://ask-mindgeist-videos.s3.amazonaws.com/previos.mp4)
 
 * Abra la [consola de desarrollador](https://developer.amazon.com/alexa/console/ask?).
 * En la barra de navegación a la izquierda haga click en **Display**.
