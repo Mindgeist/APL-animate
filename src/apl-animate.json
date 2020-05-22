@@ -1735,6 +1735,12 @@
                     "type": "Sequential",
                     "commands": [
                         {
+                            "type": "SetValue",
+                            "property": "opacity",
+                            "value": "0",
+                            "componentId": "${componentId}"
+                            },
+                        {
                             "type": "AnimateItem",
                             "componentId": "${componentId}",
                             "delay": "${delay || 0}",
@@ -1898,6 +1904,12 @@
                     "type": "Sequential",
                     "commands": [
                         {
+                            "type": "SetValue",
+                            "property": "opacity",
+                            "value": "0",
+                            "componentId": "${componentId}"
+                            },
+                        {
                             "type": "AnimateItem",
                             "componentId": "${componentId}",
                             "delay": "${delay || 0}",
@@ -2014,6 +2026,12 @@
                 {
                     "type": "Sequential",
                     "commands": [
+                        {
+                            "type": "SetValue",
+                            "property": "opacity",
+                            "value": "0",
+                            "componentId": "${componentId}"
+                            },
                         {
                             "type": "AnimateItem",
                             "componentId": "${componentId}",
@@ -2132,6 +2150,12 @@
                     "type": "Sequential",
                     "commands": [
                         {
+                            "type": "SetValue",
+                            "property": "opacity",
+                            "value": "0",
+                            "componentId": "${componentId}"
+                            },
+                        {
                             "type": "AnimateItem",
                             "componentId": "${componentId}",
                             "delay": "${delay || 0}",
@@ -2249,12 +2273,19 @@
                     "type": "Sequential",
                     "commands": [
                         {
+                            "type": "SetValue",
+                            "property": "opacity",
+                            "value": "0",
+                            "componentId": "${componentId}"
+                            },
+                        {
                             "type": "AnimateItem",
                             "componentId": "${componentId}",
                             "delay": "${delay || 0}",
                             "duration": "${duration * 0.6}",
                             "easing": "cubic-bezier(0.215, 0.61, 0.355, 1)",
                             "value": [
+                                
                                 {
                                     "property": "opacity",
                                     "from": 0,
@@ -2359,6 +2390,12 @@
             ],
             "commands": [
                 {
+                    "type": "SetValue",
+                    "property": "opacity",
+                    "value": "0",
+                    "componentId": "${componentId}"
+                    },
+                {
                     "type": "AnimateItem",
                     "componentId": "${componentId}",
                     "duration": "${duration}",
@@ -2393,6 +2430,12 @@
                 }
             ],
             "commands": [
+                {
+                    "type": "SetValue",
+                    "property": "opacity",
+                    "value": "0",
+                    "componentId": "${componentId}"
+                    },
                 {
                     "type": "AnimateItem",
                     "componentId": "${componentId}",
@@ -2442,6 +2485,12 @@
             ],
             "commands": [
                 {
+                    "type": "SetValue",
+                    "property": "opacity",
+                    "value": "0",
+                    "componentId": "${componentId}"
+                    },
+                {
                     "type": "AnimateItem",
                     "componentId": "${componentId}",
                     "duration": "${duration}",
@@ -2490,6 +2539,12 @@
             ],
             "commands": [
                 {
+                    "type": "SetValue",
+                    "property": "opacity",
+                    "value": "0",
+                    "componentId": "${componentId}"
+                    },
+                {
                     "type": "AnimateItem",
                     "componentId": "${componentId}",
                     "duration": "${duration}",
@@ -2537,6 +2592,12 @@
                 }
             ],
             "commands": [
+                {
+                    "type": "SetValue",
+                    "property": "opacity",
+                    "value": "0",
+                    "componentId": "${componentId}"
+                    },
                 {
                     "type": "AnimateItem",
                     "componentId": "${componentId}",
@@ -4411,6 +4472,12 @@
                     "type": "Sequential",
                     "commands": [
                         {
+                            "type": "SetValue",
+                            "property": "opacity",
+                            "value": "0",
+                            "componentId": "${componentId}"
+                            },
+                        {
                             "type": "AnimateItem",
                             "componentId": "${componentId}",
                             "duration": "${duration*0.6}",
@@ -4495,6 +4562,12 @@
                 {
                     "type": "Sequential",
                     "commands": [
+                        {
+                            "type": "SetValue",
+                            "property": "opacity",
+                            "value": "0",
+                            "componentId": "${componentId}"
+                            },
                         {
                             "type": "AnimateItem",
                             "componentId": "${componentId}",
@@ -4581,6 +4654,12 @@
                     "type": "Sequential",
                     "commands": [
                         {
+                            "type": "SetValue",
+                            "property": "opacity",
+                            "value": "0",
+                            "componentId": "${componentId}"
+                            },
+                        {
                             "type": "AnimateItem",
                             "componentId": "${componentId}",
                             "duration": "${duration*0.6}",
@@ -4665,6 +4744,12 @@
                 {
                     "type": "Sequential",
                     "commands": [
+                        {
+                            "type": "SetValue",
+                            "property": "opacity",
+                            "value": "0",
+                            "componentId": "${componentId}"
+                            },
                         {
                             "type": "AnimateItem",
                             "componentId": "${componentId}",
